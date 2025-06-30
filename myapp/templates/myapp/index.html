@@ -1,0 +1,53 @@
+
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pongphisut</title>
+    <style>
+        body {
+            font-family: 'Sarabun', Arial, sans-serif;
+            background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%);
+            color: #ffd700;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            border: 4px solid #ffd700;
+            border-radius: 16px;
+            background: rgba(0,0,0,0.1);
+            box-shadow: 0 0 24px #b71c1c;
+            padding: 32px;
+        }
+        .red-star {
+            font-size: 48px;
+            color: #ffd700;
+            text-shadow: 2px 2px 0 #d32f2f, 4px 4px 8px #b71c1c;
+            margin-bottom: 16px;
+            display: inline-block;
+        }
+        .big-text {
+            font-size: 3em;
+            font-weight: bold;
+            letter-spacing: 4px;
+            color: #ffd700;
+            margin-bottom: 24px;
+            text-shadow: 2px 2px 0 #b71c1c, 4px 4px 8px #d32f2f;
+        }
+        p {
+            font-size: 1.5em;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="red-star">&#9733;</span>
+        <div class="big-text">Pongphisut Buahom</div>
+        <p>วันที่: {{ current_date }}</p>
+    </div>
