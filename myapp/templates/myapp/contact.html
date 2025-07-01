@@ -1,13 +1,8 @@
 <!-- filepath: myapp/templates/myapp/contact.html -->
-<!DOCTYPE html>
-<html lang="th">
-<head>
-    <meta charset="UTF-8">
-    <title>Contact</title>
-</head>
-<body>
-    <h1>นี่คือหน้าติดต่อเด้อคับ</h1>
-    {% comment %} <p>นี่คือหน้าติดต่อเด้อคับ</p> {% endcomment %}
-    {% comment %} <a href="{% url 'index' %}">กลับหน้าหลัก</a> {% endcomment %}
-</body>
-</html>
+{% extends 'myapp/base.html' %}
+{% block title %}Contact - Pongphisut{% endblock %}
+{% block content %}
+<h1 class="mb-4">ติดต่อ</h1>
+<p>นี่คือหน้าContact 🤠</p>
+<a href="{% url 'index' %}" class="btn btn-outline-warning mt-3">กลับหน้าหลัก</a>
+{% endblock %}

@@ -1,13 +1,8 @@
 <!-- filepath: myapp/templates/myapp/about.html -->
-<!DOCTYPE html>
-<html lang="th">
-<head>
-    <meta charset="UTF-8">
-    <title>About</title>
-</head>
-<body>
-    <h1>อันนี้คือหน่าAbout</h1>
-    {% comment %} <p>นี่คือหน้าข้อมูลเกี่ยวกับเรา</p> {% endcomment %}
-    {% comment %} <a href="{% url 'index' %}">กลับหน้าหลัก</a> {% endcomment %}
-</body>
-</html>
+{% extends 'myapp/base.html' %}
+{% block title %}About - Pongphisut{% endblock %}
+{% block content %}
+<h1 class="mb-4">เกี่ยวกับ</h1>
+<p>นี่คือหน้าข้อมูลAbout 🤠</p>
+<a href="{% url 'index' %}" class="btn btn-outline-warning mt-3">กลับหน้าหลัก</a>
+{% endblock %}
